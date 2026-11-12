@@ -1,0 +1,35 @@
+# Review of animals.ts and nature.ts
+- animals.ts: Arabic diet label awkward -> 'آكل النباتات'
+- animals.ts: Arabic omnivore label made natural
+- animals.ts: Arabic carnivore label fixed
+- animals.ts: baby-of-sheep subject 'الخروف' is itself a young sheep; changed to 'النعجة'
+- animals.ts: baby donkey Arabic is 'جحش' not 'مهر' (horse foal)
+- animals.ts: spelling نيء
+- animals.ts: Arabic phrasing
+- animals.ts: Arabic phrasing
+- animals.ts: pufferfish Arabic name
+- animals.ts: Arabic plural/grammar
+- animals.ts: monarch butterfly Arabic name
+- nature.ts: ساق is feminine; rephrased
+- nature.ts: 'always turns' false for mature sunflowers; reworded
+- nature.ts: canopy vs emergent layer ambiguity; reworded
+- nature.ts: cirrus Arabic term
+- nature.ts: Arabic grammar
+- nature.ts: grammar
+- nature.ts: pumice Arabic wrong
+- nature.ts: stalactite Arabic wrong
+- nature.ts: Arabic plural wrong
+- nature.ts: Arabic wording
+- nature.ts: redwood Arabic name
+- nature.ts: producers Arabic is المنتجون (المنتجات = products)
+- nature.ts: same
+- nature.ts: omnivore Arabic
+- animals.ts (pass 2): teddy-bear Australian question: distractor 'Wombat bear' (also Australian, confusing) replaced by Kangaroo
+- animals.ts (pass 2): starfish question: added 'usually' (some starfish have more than 5 arms)
+- animals.ts (pass 2): continent table Arabic template had gender-agreement error (يعيش + feminine subjects such as الزرافة); reworded to 'في أي قارة نجد {s} في البرية؟'
+- animals.ts (pass 2): group table Arabic template 'ينتمي {s}' had gender-agreement error (الفراشة, الفقمة...); reworded to '{s} من أي مجموعة من الحيوانات؟'
+- nature.ts (pass 2): Earth-layers count question was ambiguous (3/4/5 depending on source); layers now listed in the question
+- nature.ts (pass 2): Sun question said 'ball of fire' (scientifically wrong; Sun is hot glowing gas); reworded to 'hot, glowing star'
+- nature.ts (pass 2): Arabic for 'three Rs' (no Rs in Arabic), river-overflow question, 'الأحر' -> 'الأكثر حرارة'
+- nature.ts (pass 2): date-palm bunches question was confusingly worded (bunches are not "called dates"); reworded EN+AR
+- Pass 2 search-verified claims (~32): octopus 3 hearts/8 arms; butterflies taste with feet; emperor penguin father incubates egg on feet; Arctic tern pole-to-pole migration; giant tortoise 100+ yrs; hummingbird flies backwards / bee hummingbird smallest; flamingo pink from diet (shrimp/algae); bear winter den sleep; capybara largest rodent; gorilla largest ape; ostrich largest/fastest-running bird & biggest egg; starfish arms (many have more than five -> 'usually'); seahorse male brood pouch; platypus egg-laying mammal; Angel Falls tallest; Sahara largest hot desert; wildebeest Great Migration; fennec fox ears; walrus tusks; peregrine falcon fastest in dive; blue whale largest; ladybug aphids; silkworm mulberry; camel hump fat; sea turtle beach nests.

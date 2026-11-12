@@ -1,0 +1,186 @@
+import { mcq } from "./helpers";
+
+export const BODY_ITEMS = [
+  ...mcq("body", [
+    // Organs and their jobs
+    ["Which organ pumps blood around the body?", "أي عضو يضخ الدم في الجسم؟", ["Heart", "القلب"], ["Lungs", "الرئتان"], ["Stomach", "المعدة"], ["Brain", "الدماغ"]],
+    ["Which organs help us breathe air in and out?", "أي الأعضاء تساعدنا على استنشاق الهواء وإخراجه؟", ["Lungs", "الرئتان"], ["Kidneys", "الكليتان"], ["Heart", "القلب"], ["Ears", "الأذنان"]],
+    ["Which organ is the control center of the body, helping us think?", "أي عضو هو مركز التحكم في الجسم ويساعدنا على التفكير؟", ["Brain", "الدماغ"], ["Heart", "القلب"], ["Stomach", "المعدة"], ["Liver", "الكبد"]],
+    ["Which organ mixes and breaks down the food we swallow?", "أي عضو يخلط الطعام الذي نبتلعه ويفتّته؟", ["Stomach", "المعدة"], ["Lungs", "الرئتان"], ["Heart", "القلب"], ["Brain", "الدماغ"]],
+    ["Which organs clean waste from the blood and make urine?", "أي عضوين ينظفان الدم من الفضلات ويصنعان البول؟", ["Kidneys", "الكليتان"], ["Lungs", "الرئتان"], ["Heart", "القلب"], ["Eyes", "العينان"]],
+    ["What is the largest organ of the human body?", "ما هو أكبر عضو في جسم الإنسان؟", ["Skin", "الجلد"], ["Heart", "القلب"], ["Brain", "الدماغ"], ["Stomach", "المعدة"]],
+    ["Which is the biggest organ inside the body?", "أي عضو هو الأكبر داخل الجسم؟", ["Liver", "الكبد"], ["Heart", "القلب"], ["Stomach", "المعدة"], ["Kidney", "الكلية"]],
+    ["How many kidneys does a healthy person usually have?", "كم كلية لدى الشخص السليم عادةً؟", ["2", "2"], ["1", "1"], ["4", "4"], ["6", "6"]],
+    ["How many lungs do we have?", "كم رئة لدينا؟", ["2", "2"], ["1", "1"], ["3", "3"], ["4", "4"]],
+    ["How many hearts does a human have?", "كم قلبًا لدى الإنسان؟", ["1", "1"], ["2", "2"], ["3", "3"], ["4", "4"]],
+    ["How many brains does a human have?", "كم دماغًا لدى الإنسان؟", ["1", "1"], ["2", "2"], ["3", "3"], ["5", "5"]],
+
+    // Bones and muscles
+    ["How many bones does a grown-up person have?", "كم عظمة في جسم الشخص البالغ؟", ["206", "206"], ["106", "106"], ["306", "306"], ["50", "50"]],
+    ["What is the long bone in your thigh called?", "ما اسم العظمة الطويلة في الفخذ؟", ["Femur", "عظمة الفخذ"], ["Skull", "الجمجمة"], ["Rib", "الضلع"], ["Spine", "العمود الفقري"]],
+    ["Which bone is the longest in the human body?", "أي عظمة هي الأطول في جسم الإنسان؟", ["Thigh bone", "عظمة الفخذ"], ["Rib", "الضلع"], ["Finger bone", "عظمة الإصبع"], ["Skull", "الجمجمة"]],
+    ["Which part of the skeleton protects the brain?", "أي جزء من الهيكل العظمي يحمي الدماغ؟", ["Skull", "الجمجمة"], ["Ribs", "الأضلاع"], ["Knee", "الركبة"], ["Spine", "العمود الفقري"]],
+    ["Which bones protect the heart and lungs?", "أي عظام تحمي القلب والرئتين؟", ["Ribs", "الأضلاع"], ["Toe bones", "عظام أصابع القدم"], ["Wrist bones", "عظام المعصم"], ["Ankle bones", "عظام الكاحل"]],
+    ["What is another name for the backbone?", "ما الاسم الآخر للعمود الفقري؟", ["Spine", "السلسلة الفقرية"], ["Skull", "الجمجمة"], ["Ribcage", "القفص الصدري"], ["Kneecap", "رضفة الركبة"]],
+    ["Which body part bends in the middle of your leg?", "أي جزء من الجسم ينثني في منتصف الساق؟", ["Knee", "الركبة"], ["Elbow", "الكوع"], ["Wrist", "المعصم"], ["Neck", "الرقبة"]],
+    ["Which body part bends in the middle of your arm?", "أي جزء من الجسم ينثني في منتصف الذراع؟", ["Elbow", "الكوع"], ["Knee", "الركبة"], ["Ankle", "الكاحل"], ["Hip", "الورك"]],
+    ["What helps your bones move and bend your body?", "ما الذي يساعد عظامك على الحركة وثني جسمك؟", ["Muscles", "العضلات"], ["Hair", "الشعر"], ["Nails", "الأظافر"], ["Teeth", "الأسنان"]],
+    ["What is the main job of the skeleton?", "ما الوظيفة الرئيسية للهيكل العظمي؟", ["Support the body", "دعم الجسم"], ["Digest food", "هضم الطعام"], ["Make sounds", "إصدار الأصوات"], ["Smell odors", "شمّ الروائح"]],
+    ["What do we call the places where two bones meet?", "ماذا نسمي المكان الذي تلتقي فيه عظمتان؟", ["Joint", "المفصل"], ["Muscle", "العضلة"], ["Nail", "الظفر"], ["Vein", "الوريد"]],
+    ["Which mineral in milk helps make bones strong?", "أي معدن في الحليب يساعد على تقوية العظام؟", ["Calcium", "الكالسيوم"], ["Sugar", "السكر"], ["Salt", "الملح"], ["Gold", "الذهب"]],
+    ["Which of these is a muscle you can feel in your upper arm?", "أي من هذه عضلة يمكنك الإحساس بها في أعلى ذراعك؟", ["Biceps", "العضلة ذات الرأسين"], ["Femur", "عظمة الفخذ"], ["Skull", "الجمجمة"], ["Pupil", "حدقة العين"]],
+
+    // Five senses
+    ["How many senses do we usually talk about?", "كم حاسة نتحدث عنها عادةً؟", ["5", "5"], ["3", "3"], ["7", "7"], ["10", "10"]],
+    ["Which organ do we use to see?", "أي عضو نستخدمه للرؤية؟", ["Eyes", "العينان"], ["Ears", "الأذنان"], ["Nose", "الأنف"], ["Tongue", "اللسان"]],
+    ["Which organs do we use to hear?", "أي أعضاء نستخدمها للسمع؟", ["Ears", "الأذنان"], ["Eyes", "العينان"], ["Nose", "الأنف"], ["Hands", "اليدان"]],
+    ["Which organ do we use to smell flowers?", "أي عضو نستخدمه لشمّ الزهور؟", ["Nose", "الأنف"], ["Ears", "الأذنان"], ["Eyes", "العينان"], ["Knees", "الركبتان"]],
+    ["Which part of the body helps us taste food?", "أي جزء من الجسم يساعدنا على تذوق الطعام؟", ["Tongue", "اللسان"], ["Nose", "الأنف"], ["Eyes", "العينان"], ["Ears", "الأذنان"]],
+    ["Which sense do we use when we feel something hot or cold?", "أي حاسة نستخدمها عندما نشعر بشيء ساخن أو بارد؟", ["Touch", "اللمس"], ["Sight", "البصر"], ["Hearing", "السمع"], ["Taste", "التذوق"]],
+    ["Which sense do we use when we listen to music?", "أي حاسة نستخدمها عندما نستمع إلى الموسيقى؟", ["Hearing", "السمع"], ["Sight", "البصر"], ["Smell", "الشم"], ["Touch", "اللمس"]],
+    ["Which sense tells us a cake is sweet?", "أي حاسة تخبرنا أن الكعكة حلوة؟", ["Taste", "التذوق"], ["Hearing", "السمع"], ["Sight", "البصر"], ["Balance", "التوازن"]],
+    ["Which sense do we use when we read a book?", "أي حاسة نستخدمها عندما نقرأ كتابًا؟", ["Sight", "البصر"], ["Smell", "الشم"], ["Taste", "التذوق"], ["Hearing", "السمع"]],
+    ["Which part of the body is the main organ of touch?", "ما العضو الرئيسي لحاسة اللمس؟", ["Skin", "الجلد"], ["Teeth", "الأسنان"], ["Heart", "القلب"], ["Lungs", "الرئتان"]],
+    ["What is the black circle in the middle of your eye called?", "ماذا تسمى الدائرة السوداء في منتصف العين؟", ["Pupil", "حدقة العين"], ["Eyelash", "الرمش"], ["Eyebrow", "الحاجب"], ["Eyelid", "الجفن"]],
+    ["What do your eyelids do when you blink?", "ماذا تفعل جفونك عندما ترمش؟", ["Clean and protect the eye", "تنظف العين وتحميها"], ["Help you hear", "تساعدك على السمع"], ["Help you taste", "تساعدك على التذوق"], ["Help you smell", "تساعدك على الشم"]],
+    ["Which part of your ear can you see on the side of your head?", "أي جزء من الأذن تراه على جانب رأسك؟", ["Outer ear", "الأذن الخارجية"], ["Pupil", "حدقة العين"], ["Tongue", "اللسان"], ["Nostril", "فتحة الأنف"]],
+    ["What do we call the two holes in your nose?", "ماذا نسمي الفتحتين في الأنف؟", ["Nostrils", "فتحتا الأنف"], ["Pupils", "حدقتا العينين"], ["Eardrums", "طبلتا الأذن"], ["Dimples", "الغمّازتان"]],
+    ["What should you wear to protect your eyes from bright sunlight?", "ماذا ترتدي لحماية عينيك من ضوء الشمس القوي؟", ["Sunglasses", "نظارة شمسية"], ["Gloves", "قفازات"], ["Socks", "جوارب"], ["A scarf on your knee", "وشاحًا على ركبتك"]],
+
+    // Teeth
+    ["How many baby teeth do children usually have?", "كم سنًّا لبنية لدى الأطفال عادةً؟", ["20", "20"], ["10", "10"], ["32", "32"], ["40", "40"]],
+    ["How many teeth does a grown-up usually have?", "كم سنًّا لدى البالغ عادةً؟", ["32", "32"], ["20", "20"], ["16", "16"], ["50", "50"]],
+    ["What happens to baby teeth as you grow up?", "ماذا يحدث للأسنان اللبنية عندما تكبر؟", ["They fall out", "تسقط"], ["They turn into bones", "تتحول إلى عظام"], ["They grow bigger", "تكبر"], ["They turn green", "تصبح خضراء"]],
+    ["How many times a day should we brush our teeth?", "كم مرة في اليوم يجب أن نفرّش أسناننا؟", ["Twice", "مرتين"], ["Never", "أبدًا"], ["Once a week", "مرة في الأسبوع"], ["Once a month", "مرة في الشهر"]],
+    ["Who is the doctor that looks after our teeth?", "من هو الطبيب الذي يعتني بأسناننا؟", ["Dentist", "طبيب الأسنان"], ["Pilot", "الطيار"], ["Chef", "الطباخ"], ["Farmer", "المزارع"]],
+    ["What is the hard white outer layer of a tooth called?", "ماذا تسمى الطبقة البيضاء الصلبة الخارجية للسن؟", ["Enamel", "المينا"], ["Skin", "الجلد"], ["Hair", "الشعر"], ["Muscle", "العضلة"]],
+    ["What is the hardest part of the human body?", "ما هو أصلب جزء في جسم الإنسان؟", ["Tooth enamel", "مينا الأسنان"], ["Skin", "الجلد"], ["Muscle", "العضلة"], ["Nose", "الأنف"]],
+    ["Which food can cause cavities in teeth if we eat too much?", "أي طعام قد يسبب تسوّس الأسنان إذا أكلنا منه كثيرًا؟", ["Candy", "الحلوى"], ["Carrot", "الجزر"], ["Cucumber", "الخيار"], ["Water", "الماء"]],
+    ["What do we use to clean our teeth?", "ماذا نستخدم لتنظيف أسناننا؟", ["Toothbrush and toothpaste", "فرشاة ومعجون أسنان"], ["Comb", "مشط"], ["Spoon", "ملعقة"], ["Sponge for dishes", "إسفنجة الأطباق"]],
+    ["Which job do our front teeth do best?", "ما العمل الذي تقوم به أسناننا الأمامية بشكل أفضل؟", ["Bite and cut food", "قضم الطعام وقطعه"], ["Smell food", "شمّ الطعام"], ["Hear sounds", "سماع الأصوات"], ["See colors", "رؤية الألوان"]],
+    ["Why do we chew our food?", "لماذا نمضغ طعامنا؟", ["To break it into small pieces", "لنفتته إلى قطع صغيرة"], ["To make it colder", "لنجعله أبرد"], ["To make it louder", "لنجعله أعلى صوتًا"], ["To make it bigger", "لنجعله أكبر"]],
+
+    // Blood and heart
+    ["What color is human blood?", "ما لون دم الإنسان؟", ["Red", "أحمر"], ["Blue", "أزرق"], ["Green", "أخضر"], ["Yellow", "أصفر"]],
+    ["What do red blood cells carry around the body?", "ماذا تحمل كريات الدم الحمراء في الجسم؟", ["Oxygen", "الأكسجين"], ["Sound", "الصوت"], ["Light", "الضوء"], ["Colors", "الألوان"]],
+    ["How many chambers (rooms) does the human heart have?", "كم حجرة في قلب الإنسان؟", ["4", "4"], ["2", "2"], ["6", "6"], ["8", "8"]],
+    ["What do we call the tubes that carry blood around the body?", "ماذا نسمي الأنابيب التي تحمل الدم في الجسم؟", ["Blood vessels", "الأوعية الدموية"], ["Bones", "العظام"], ["Muscles", "العضلات"], ["Teeth", "الأسنان"]],
+    ["What can you feel on your wrist that shows your heart is beating?", "ماذا تشعر به على معصمك ويدل على أن قلبك ينبض؟", ["Pulse", "النبض"], ["Sneeze", "العطاس"], ["Hiccup", "الفواق"], ["Yawn", "التثاؤب"]],
+    ["About how big is your heart?", "ما حجم قلبك تقريبًا؟", ["About the size of your fist", "بحجم قبضة يدك تقريبًا"], ["As big as a football", "بحجم كرة قدم"], ["As small as a pea", "بحجم حبة البازلاء"], ["As big as your head", "بحجم رأسك"]],
+    ["What does your heart do when you run fast?", "ماذا يفعل قلبك عندما تركض بسرعة؟", ["Beats faster", "ينبض أسرع"], ["Stops beating", "يتوقف عن النبض"], ["Beats slower", "ينبض أبطأ"], ["Moves to your leg", "ينتقل إلى ساقك"]],
+    ["What helps stop bleeding by making a scab on a cut?", "ما الذي يساعد على إيقاف النزيف بتكوين قشرة على الجرح؟", ["Platelets in the blood", "الصفائح الدموية"], ["Your hair", "شعرك"], ["Your teeth", "أسنانك"], ["Your eyes", "عينيك"]],
+    ["Which exercise makes your heart stronger?", "أي نشاط يجعل قلبك أقوى؟", ["Running and playing", "الركض واللعب"], ["Lying still all day", "الاستلقاء طوال اليوم"], ["Watching TV for hours", "مشاهدة التلفاز لساعات"], ["Sitting on a sofa", "الجلوس على الأريكة"]],
+
+    // Brain
+    ["Where is the brain located?", "أين يوجد الدماغ؟", ["Inside the head", "داخل الرأس"], ["In the stomach", "في المعدة"], ["In the foot", "في القدم"], ["In the hand", "في اليد"]],
+    ["What do we use to remember things like our friend's name?", "ماذا نستخدم لنتذكر أشياء مثل اسم صديقنا؟", ["Brain", "الدماغ"], ["Elbow", "الكوع"], ["Toes", "أصابع القدم"], ["Hair", "الشعر"]],
+    ["What carries messages between the brain and the body?", "ما الذي ينقل الرسائل بين الدماغ والجسم؟", ["Nerves", "الأعصاب"], ["Bones", "العظام"], ["Nails", "الأظافر"], ["Teeth", "الأسنان"]],
+    ["Which part of the body is protected by the skull?", "أي جزء من الجسم تحميه الجمجمة؟", ["Brain", "الدماغ"], ["Heart", "القلب"], ["Lungs", "الرئتان"], ["Stomach", "المعدة"]],
+    ["Which of these is a good way to protect your brain on a bike?", "ما هي طريقة جيدة لحماية دماغك أثناء ركوب الدراجة؟", ["Wear a helmet", "ارتداء خوذة"], ["Wear a hat made of paper", "ارتداء قبعة من الورق"], ["Close your eyes", "إغلاق عينيك"], ["Ride very fast", "قيادة الدراجة بسرعة كبيرة"]],
+
+    // Lungs and breathing
+    ["Which gas from the air do our bodies need to breathe in?", "أي غاز من الهواء يحتاج جسمنا إلى استنشاقه؟", ["Oxygen", "الأكسجين"], ["Smoke", "الدخان"], ["Dust", "الغبار"], ["Steam", "البخار"]],
+    ["Which gas do we breathe out?", "أي غاز نخرجه عند الزفير؟", ["Carbon dioxide", "ثاني أكسيد الكربون"], ["Gold dust", "غبار الذهب"], ["Perfume", "العطر"], ["Sugar", "السكر"]],
+    ["Which tube carries air from your throat down to your lungs?", "أي أنبوب ينقل الهواء من الحلق إلى الرئتين؟", ["Windpipe", "القصبة الهوائية"], ["Spine", "العمود الفقري"], ["Food pipe", "المريء"], ["Vein", "الوريد"]],
+    ["What happens to your chest when you breathe in?", "ماذا يحدث لصدرك عندما تأخذ شهيقًا؟", ["It expands", "يتسع"], ["It disappears", "يختفي"], ["It turns red", "يصبح أحمر"], ["It freezes", "يتجمد"]],
+    ["What do we call taking air into the lungs?", "ماذا نسمي أخذ الهواء إلى الرئتين؟", ["Inhale", "الشهيق"], ["Exhale", "الزفير"], ["Swallow", "البلع"], ["Blink", "الرمش"]],
+    ["What do we call breathing air out of the lungs?", "ماذا نسمي إخراج الهواء من الرئتين؟", ["Exhale", "الزفير"], ["Inhale", "الشهيق"], ["Chew", "المضغ"], ["Blink", "الرمش"]],
+    ["Why do we breathe faster after running?", "لماذا نتنفس أسرع بعد الركض؟", ["Our body needs more oxygen", "جسمنا يحتاج إلى أكسجين أكثر"], ["Our hair needs air", "شعرنا يحتاج إلى هواء"], ["Our teeth are tired", "أسناننا متعبة"], ["Our eyes are hungry", "عيوننا جائعة"]],
+    ["What should you use to cover your mouth when you cough?", "ماذا تستخدم لتغطية فمك عند السعال؟", ["Your elbow or a tissue", "كوعك أو منديل ورقي"], ["Nothing", "لا شيء"], ["Your shoe", "حذاءك"], ["A toy", "لعبة"]],
+
+    // Digestion
+    ["Where does digestion of our food begin?", "أين يبدأ هضم طعامنا؟", ["In the mouth", "في الفم"], ["In the foot", "في القدم"], ["In the ear", "في الأذن"], ["In the eye", "في العين"]],
+    ["What is the liquid in your mouth that starts to break down food?", "ما السائل في فمك الذي يبدأ بتفتيت الطعام؟", ["Saliva", "اللعاب"], ["Blood", "الدم"], ["Sweat", "العرق"], ["Tears", "الدموع"]],
+    ["What is the tube that carries food from your mouth to your stomach?", "ما الأنبوب الذي ينقل الطعام من الفم إلى المعدة؟", ["Esophagus (food pipe)", "المريء"], ["Windpipe", "القصبة الهوائية"], ["Spine", "العمود الفقري"], ["Artery", "الشريان"]],
+    ["Where do most nutrients from food pass into the blood?", "أين تنتقل معظم العناصر الغذائية من الطعام إلى الدم؟", ["Small intestine", "الأمعاء الدقيقة"], ["Lungs", "الرئتان"], ["Ears", "الأذنان"], ["Knees", "الركبتان"]],
+    ["Which is the correct path of food?", "ما المسار الصحيح للطعام؟", ["Mouth, food pipe, stomach", "الفم، المريء، المعدة"], ["Stomach, mouth, food pipe", "المعدة، الفم، المريء"], ["Food pipe, stomach, mouth", "المريء، المعدة، الفم"], ["Stomach, food pipe, mouth", "المعدة، المريء، الفم"]],
+    ["Why do we need to eat food?", "لماذا نحتاج إلى تناول الطعام؟", ["To get energy and grow", "لنحصل على الطاقة وننمو"], ["To make our hair blue", "لنجعل شعرنا أزرق"], ["To make our eyes bigger", "لنجعل عيوننا أكبر"], ["To become taller than trees", "لنصبح أطول من الأشجار"]],
+    ["What does your stomach make when you are hungry and it is empty?", "ماذا قد تفعل معدتك عندما تكون فارغة وتشعر بالجوع؟", ["It may growl", "قد تُصدر قرقرة"], ["It sings a song", "تغني أغنية"], ["It talks to you", "تتحدث إليك"], ["It turns off", "تنطفئ"]],
+    ["Which kind of food helps your digestion because it has lots of fiber?", "أي طعام يساعد على الهضم لأنه غني بالألياف؟", ["Fruits and vegetables", "الفواكه والخضروات"], ["Candy", "الحلوى"], ["Soda", "المشروبات الغازية"], ["Ice cream", "المثلجات"]],
+
+    // Skin, hair, nails
+    ["What is one job of your skin?", "ما إحدى وظائف جلدك؟", ["Protect the body", "حماية الجسم"], ["Pump blood", "ضخ الدم"], ["Think", "التفكير"], ["Digest food", "هضم الطعام"]],
+    ["What comes out of your skin when you get hot to cool you down?", "ماذا يخرج من جلدك عندما تشعر بالحر ليبرّدك؟", ["Sweat", "العرق"], ["Milk", "الحليب"], ["Juice", "العصير"], ["Water from the lungs", "ماء من الرئتين"]],
+    ["What can you put on your skin to protect it from the sun?", "ماذا تضع على جلدك لحمايته من الشمس؟", ["Sunscreen", "واقي الشمس"], ["Sand", "الرمل"], ["Salt", "الملح"], ["Glue", "الصمغ"]],
+    ["What forms on a cut as it heals?", "ماذا يتكوّن على الجرح أثناء التئامه؟", ["A scab", "قشرة"], ["A flower", "زهرة"], ["A feather", "ريشة"], ["A tooth", "سن"]],
+    ["Which of these is different for every person and leaves marks on things you touch?", "أي من هذه تختلف من شخص لآخر وتترك أثرًا على ما تلمسه؟", ["Fingerprints", "بصمات الأصابع"], ["Number of eyes", "عدد العينين"], ["Number of ears", "عدد الأذنين"], ["Blood color", "لون الدم"]],
+    ["What protects the tips of your fingers and toes?", "ما الذي يحمي أطراف أصابع اليدين والقدمين؟", ["Nails", "الأظافر"], ["Eyebrows", "الحواجب"], ["Ribs", "الأضلاع"], ["Lungs", "الرئتان"]],
+    ["Which of these keeps growing on your head and can be cut?", "أي من هذه تستمر في النمو على رأسك ويمكن قصها؟", ["Hair", "الشعر"], ["Bones", "العظام"], ["Teeth", "الأسنان"], ["Tongue", "اللسان"]],
+    ["What do we call the tiny drops that come from your eyes when you cry?", "ماذا نسمي القطرات الصغيرة التي تخرج من عينيك عند البكاء؟", ["Tears", "الدموع"], ["Sweat", "العرق"], ["Milk", "الحليب"], ["Rain", "المطر"]],
+
+    // Growth
+    ["Which order shows growing up from youngest to oldest?", "أي ترتيب يُظهر النمو من الأصغر إلى الأكبر؟", ["Baby, child, adult", "رضيع، طفل، بالغ"], ["Adult, child, baby", "بالغ، طفل، رضيع"], ["Child, baby, adult", "طفل، رضيع، بالغ"], ["Adult, baby, child", "بالغ، رضيع، طفل"]],
+    ["What helps children grow tall and strong?", "ما الذي يساعد الأطفال على النمو بطول وقوة؟", ["Healthy food, sleep and play", "طعام صحي ونوم ولعب"], ["Only candy", "الحلوى فقط"], ["Staying up all night", "السهر طوال الليل"], ["Never moving", "عدم الحركة أبدًا"]],
+    ["What do we call a very young human who cannot walk or talk yet?", "ماذا نسمي الإنسان الصغير جدًا الذي لا يستطيع المشي أو الكلام بعد؟", ["Baby", "رضيع"], ["Teenager", "مراهق"], ["Grandparent", "جد أو جدة"], ["Adult", "بالغ"]],
+    ["Which part of your body changes when you grow taller?", "أي جزء من جسمك يتغير عندما تزداد طولًا؟", ["Your bones grow longer", "تزداد عظامك طولًا"], ["Your eyes disappear", "تختفي عيناك"], ["Your nose falls off", "يسقط أنفك"], ["Your skin turns to wood", "يتحول جلدك إلى خشب"]],
+
+    // Hygiene and healthy habits
+    ["What should you use to wash your hands properly?", "ماذا يجب أن تستخدم لغسل يديك جيدًا؟", ["Soap and water", "الصابون والماء"], ["Only dry paper", "ورقًا جافًا فقط"], ["Sand", "الرمل"], ["Juice", "العصير"]],
+    ["When should you wash your hands?", "متى يجب أن تغسل يديك؟", ["Before eating", "قبل تناول الطعام"], ["Only on Fridays", "أيام الجمعة فقط"], ["Never", "أبدًا"], ["Only when sleeping", "عند النوم فقط"]],
+    ["When else should you wash your hands?", "ومتى أيضًا يجب أن تغسل يديك؟", ["After using the toilet", "بعد استخدام المرحاض"], ["After sleeping on a pillow only", "بعد النوم على الوسادة فقط"], ["After looking at a book", "بعد النظر إلى كتاب"], ["After smiling", "بعد الابتسام"]],
+    ["Why do we wash our hands with soap?", "لماذا نغسل أيدينا بالصابون؟", ["To remove germs", "لنزيل الجراثيم"], ["To make hands bigger", "لنجعل اليدين أكبر"], ["To make nails grow", "لتنمو الأظافر"], ["To change skin color", "لنغيّر لون الجلد"]],
+    ["What are tiny living things that can make us sick called?", "ماذا نسمي الكائنات الحية الصغيرة جدًا التي قد تسبب لنا المرض؟", ["Germs", "الجراثيم"], ["Planets", "الكواكب"], ["Rainbows", "أقواس القزح"], ["Magnets", "المغناطيسات"]],
+    ["What should you do before eating fruit you bought?", "ماذا يجب أن تفعل قبل أن تأكل فاكهة اشتريتها؟", ["Wash it", "تغسلها"], ["Paint it", "تلوّنها"], ["Freeze it for a year", "تجمّدها لسنة"], ["Throw it", "ترميها"]],
+    ["What should you use when you sneeze?", "ماذا يجب أن تستخدم عندما تعطس؟", ["A tissue or your elbow", "منديلًا ورقيًا أو كوعك"], ["Your hands only", "يديك فقط"], ["A spoon", "ملعقة"], ["A hat", "قبعة"]],
+    ["Why is it good to take a bath or shower regularly?", "لماذا من الجيد أن نستحم بانتظام؟", ["To keep our body clean", "لنحافظ على نظافة جسمنا"], ["To grow taller at once", "لنطول فورًا"], ["To get new bones", "لنحصل على عظام جديدة"], ["To hear better", "لنسمع أفضل"]],
+    ["Which of these is a healthy habit?", "أي من هذه عادة صحية؟", ["Eating fruits and vegetables", "تناول الفواكه والخضروات"], ["Skipping every meal", "ترك كل الوجبات"], ["Eating only sweets", "أكل الحلويات فقط"], ["Never drinking water", "عدم شرب الماء أبدًا"]],
+    ["Which drink is best for keeping your body healthy and not thirsty?", "أي مشروب هو الأفضل لجسمك ليبقى بصحة جيدة وغير عطشان؟", ["Water", "الماء"], ["Soda", "المشروب الغازي"], ["Syrup", "الشراب المحلّى"], ["Milkshake every hour", "ميلك شيك كل ساعة"]],
+    ["What should you do with a tissue after you use it?", "ماذا يجب أن تفعل بالمنديل الورقي بعد استخدامه؟", ["Throw it in the bin", "ترميه في سلة المهملات"], ["Put it in your pocket forever", "تضعه في جيبك للأبد"], ["Give it to a friend", "تعطيه لصديق"], ["Eat it", "تأكله"]],
+    ["What is the best way to care for your nails?", "ما أفضل طريقة للعناية بأظافرك؟", ["Keep them short and clean", "إبقاؤها قصيرة ونظيفة"], ["Bite them", "قضمها"], ["Paint them with mud", "طلاؤها بالطين"], ["Never touch them", "عدم لمسها أبدًا"]],
+
+    // Sleep
+    ["What does your body do while you sleep?", "ماذا يفعل جسمك أثناء النوم؟", ["Rests and recovers", "يرتاح ويستعيد نشاطه"], ["Turns invisible", "يصبح غير مرئي"], ["Stops forever", "يتوقف للأبد"], ["Turns into a statue", "يتحول إلى تمثال"]],
+    ["What do we call the pictures and stories our brain makes when we sleep?", "ماذا نسمي الصور والقصص التي يصنعها دماغنا أثناء النوم؟", ["Dreams", "الأحلام"], ["Tears", "الدموع"], ["Pulses", "النبضات"], ["Freckles", "النمش"]],
+    ["Who usually needs more sleep, a child or an adult?", "من يحتاج عادةً إلى نوم أكثر، الطفل أم البالغ؟", ["A child", "الطفل"], ["An adult", "البالغ"], ["They need the same amount", "يحتاجان إلى المقدار نفسه"], ["Neither needs sleep", "لا أحد منهما يحتاج إلى نوم"]],
+    ["What is a good thing to do to help you sleep well?", "ما الأمر الجيد الذي يساعدك على النوم جيدًا؟", ["Go to bed at a regular time", "النوم في وقت منتظم"], ["Run around just before bed", "الركض قبل النوم مباشرة"], ["Drink fizzy drinks at night", "شرب المشروبات الغازية ليلًا"], ["Stay up all night", "السهر طوال الليل"]],
+    ["What can happen if you do not get enough sleep?", "ماذا قد يحدث إذا لم تنم بما يكفي؟", ["You feel tired and cranky", "تشعر بالتعب وسرعة الغضب"], ["You grow wings", "تنمو لك أجنحة"], ["You become invisible", "تصبح غير مرئي"], ["You turn blue", "تصبح أزرق اللون"]],
+
+    // Exercise
+    ["Which of these is exercise?", "أي من هذه تُعد تمرينًا رياضيًا؟", ["Running", "الركض"], ["Sleeping", "النوم"], ["Reading lying down", "القراءة وأنت مستلقٍ"], ["Watching TV", "مشاهدة التلفاز"]],
+    ["Why is exercise good for us?", "لماذا التمرين مفيد لنا؟", ["It makes our body strong", "يجعل جسمنا قويًا"], ["It makes bones disappear", "يجعل العظام تختفي"], ["It makes us sick", "يجعلنا مرضى"], ["It makes teeth fall out", "يجعل الأسنان تسقط"]],
+    ["Which of these sports uses a pool?", "أي من هذه الرياضات تستخدم مسبحًا؟", ["Swimming", "السباحة"], ["Running", "الجري"], ["Cycling", "ركوب الدراجات"], ["Football", "كرة القدم"]],
+    ["What should you do before exercising to prepare your muscles?", "ماذا يجب أن تفعل قبل التمرين لتجهّز عضلاتك؟", ["Warm up and stretch", "الإحماء والتمدد"], ["Eat a huge meal", "تناول وجبة ضخمة"], ["Go to sleep", "النوم"], ["Sit still", "الجلوس بلا حركة"]],
+    ["What should you drink after you play sports and feel thirsty?", "ماذا تشرب بعد اللعب الرياضي عندما تشعر بالعطش؟", ["Water", "الماء"], ["Soda", "المشروب الغازي"], ["Syrup", "الشراب المحلّى"], ["Tea with sugar", "الشاي بالسكر"]],
+    ["Which of these is a good way to be active every day?", "أي من هذه طريقة جيدة لتكون نشيطًا كل يوم؟", ["Playing outside", "اللعب في الخارج"], ["Lying on the sofa", "الاستلقاء على الأريكة"], ["Sitting all day", "الجلوس طوال اليوم"], ["Staying in bed", "البقاء في السرير"]],
+    ["Which of these gets stronger when you exercise?", "أي من هذه تصبح أقوى عندما تتمرن؟", ["Your leg muscles", "عضلات ساقيك"], ["Your eyelashes", "رموشك"], ["Your fingernails", "أظافرك"], ["Your hair", "شعرك"]],
+
+    // Safety habits
+    ["What should you wear in a car to stay safe?", "ماذا يجب أن ترتدي في السيارة لتبقى آمنًا؟", ["A seat belt", "حزام الأمان"], ["A swimsuit", "ملابس السباحة"], ["Sunglasses only", "نظارة شمسية فقط"], ["A scarf over your eyes", "وشاحًا على عينيك"]],
+    ["What should you do before you cross the road?", "ماذا يجب أن تفعل قبل عبور الطريق؟", ["Look left and right", "تنظر يمينًا ويسارًا"], ["Close your eyes", "تغمض عينيك"], ["Run as fast as you can", "تركض بأسرع ما تستطيع"], ["Look at your phone", "تنظر إلى هاتفك"]],
+    ["Who should you tell if you feel unsafe or scared?", "من يجب أن تخبر إذا شعرت بعدم الأمان أو بالخوف؟", ["A trusted grown-up", "شخصًا بالغًا تثق به"], ["No one", "لا أحد"], ["Only a toy", "لعبة فقط"], ["A stranger", "شخصًا غريبًا"]],
+    ["What should you never touch because it can burn you?", "ما الذي يجب ألا تلمسه لأنه قد يحرقك؟", ["A hot stove", "موقدًا ساخنًا"], ["A soft pillow", "وسادة ناعمة"], ["A cold glass of water", "كوب ماء بارد"], ["A paper bag", "كيسًا ورقيًا"]],
+    ["Who should help you when you use a sharp knife in the kitchen?", "من يجب أن يساعدك عند استخدام سكين حادة في المطبخ؟", ["A grown-up", "شخص بالغ"], ["A baby", "رضيع"], ["A toy", "لعبة"], ["Nobody", "لا أحد"]],
+    ["What should you wear on your head when riding a bicycle?", "ماذا يجب أن ترتدي على رأسك عند ركوب الدراجة؟", ["A helmet", "خوذة"], ["A crown", "تاجًا"], ["A woolly hat", "قبعة صوفية"], ["Nothing", "لا شيء"]],
+    ["Should you eat medicine or pills you find on the floor?", "هل يجب أن تأكل دواءً أو حبوبًا تجدها على الأرض؟", ["No, never", "لا، أبدًا"], ["Yes, always", "نعم، دائمًا"], ["Yes, if they are colorful", "نعم، إذا كانت ملونة"], ["Yes, if you are hungry", "نعم، إذا كنت جائعًا"]],
+    ["What is the safe way to swim in a pool or the sea?", "ما الطريقة الآمنة للسباحة في المسبح أو البحر؟", ["Swim with a grown-up watching", "السباحة بوجود شخص بالغ يراقب"], ["Swim alone far away", "السباحة وحدك بعيدًا"], ["Close your eyes and jump in", "إغلاق عينيك والقفز"], ["Eat a huge meal", "تناول وجبة ضخمة"]],
+
+    // Emotions and feelings
+    ["How do you feel when you get a surprise gift you love?", "كيف تشعر عندما تتلقى هدية مفاجئة تحبها؟", ["Happy", "سعيدًا"], ["Sad", "حزينًا"], ["Sleepy", "نعسانًا"], ["Angry", "غاضبًا"]],
+    ["How might you feel if you lose your favorite toy?", "كيف قد تشعر إذا فقدت لعبتك المفضلة؟", ["Sad", "حزينًا"], ["Excited", "متحمسًا"], ["Proud", "فخورًا"], ["Hungry", "جائعًا"]],
+    ["What feeling do you have when you hear a very loud, sudden noise in the dark?", "أي شعور يأتيك عند سماع صوت عالٍ مفاجئ في الظلام؟", ["Scared", "الخوف"], ["Boredom", "الملل"], ["Pride", "الفخر"], ["Joy", "الفرح"]],
+    ["How do you feel when you finish a hard puzzle by yourself?", "كيف تشعر عندما تنهي أحجية صعبة بنفسك؟", ["Proud", "فخورًا"], ["Scared", "خائفًا"], ["Lost", "تائهًا"], ["Sleepy", "نعسانًا"]],
+    ["What can you do to calm down when you feel angry?", "ماذا يمكنك أن تفعل لتهدأ عندما تشعر بالغضب؟", ["Take slow deep breaths", "تأخذ أنفاسًا عميقة وبطيئة"], ["Hit something", "تضرب شيئًا"], ["Shout loudly", "تصرخ بصوت عالٍ"], ["Break a toy", "تكسر لعبة"]],
+    ["What can you do if you feel sad?", "ماذا يمكنك أن تفعل إذا شعرت بالحزن؟", ["Talk to someone you trust", "تتحدث مع شخص تثق به"], ["Hide it forever", "تخفيه للأبد"], ["Be mean to others", "تسيء إلى الآخرين"], ["Stop eating", "تتوقف عن الأكل"]],
+    ["How do you feel when you wait for a trip you really want to go on?", "كيف تشعر وأنت تنتظر رحلة تريد الذهاب إليها كثيرًا؟", ["Excited", "متحمسًا"], ["Angry", "غاضبًا"], ["Scared of it", "خائفًا منها"], ["Bored of it", "متضجرًا منها"]],
+    ["How should you treat a friend who feels sad?", "كيف يجب أن تعامل صديقًا حزينًا؟", ["Be kind and listen", "تكون لطيفًا وتستمع إليه"], ["Laugh at him", "تضحك عليه"], ["Ignore him", "تتجاهله"], ["Tease him", "تغيظه"]],
+    ["Is it okay to feel different feelings like happy, sad, or angry?", "هل من الطبيعي أن نشعر بمشاعر مختلفة كالسعادة والحزن والغضب؟", ["Yes, everyone does", "نعم، الجميع يشعر بها"], ["No, never", "لا، أبدًا"], ["Only grown-ups do", "الكبار فقط"], ["Only babies do", "الرضع فقط"]],
+    ["What do we often show on our face when we are happy?", "ماذا نُظهر غالبًا على وجوهنا عندما نكون سعداء؟", ["A smile", "ابتسامة"], ["A snore", "شخيرًا"], ["A hiccup", "فواقًا"], ["A cough", "سعالًا"]],
+
+    // Body part counts and misc
+    ["How many fingers do you have on both hands together?", "كم إصبعًا لديك في اليدين معًا؟", ["10", "10"], ["8", "8"], ["12", "12"], ["20", "20"]],
+    ["How many fingers (including the thumb) are on one hand?", "كم إصبعًا (مع الإبهام) في اليد الواحدة؟", ["5", "5"], ["4", "4"], ["6", "6"], ["10", "10"]],
+    ["How many toes do you have on both feet together?", "كم إصبعًا في قدميك معًا؟", ["10", "10"], ["5", "5"], ["8", "8"], ["20", "20"]],
+    ["How many eyes does a person normally have?", "كم عينًا لدى الشخص عادةً؟", ["2", "2"], ["1", "1"], ["3", "3"], ["4", "4"]],
+    ["How many ears does a person normally have?", "كم أذنًا لدى الشخص عادةً؟", ["2", "2"], ["1", "1"], ["3", "3"], ["4", "4"]],
+    ["How many arms and legs do you have in total?", "كم عدد الذراعين والساقين لديك معًا؟", ["4", "4"], ["2", "2"], ["6", "6"], ["8", "8"]],
+    ["How many nostrils does a person have?", "كم فتحة أنف لدى الإنسان؟", ["2", "2"], ["1", "1"], ["3", "3"], ["4", "4"]],
+    ["Which is the thickest finger on your hand?", "أي إصبع هو الأسمك في يدك؟", ["Thumb", "الإبهام"], ["Little finger", "الخنصر"], ["Middle finger", "الوسطى"], ["Ring finger", "البنصر"]],
+    ["Which vitamin does your skin make when it gets sunlight?", "أي فيتامين يصنعه جلدك عندما يتعرض لأشعة الشمس؟", ["Vitamin D", "فيتامين د"], ["Vitamin Z", "فيتامين ز"], ["Vitamin Q", "فيتامين ق"], ["Vitamin X", "فيتامين خ"]],
+    ["Which body part do we use to chew food?", "أي جزء من الجسم نستخدمه لمضغ الطعام؟", ["Teeth", "الأسنان"], ["Ears", "الأذنان"], ["Elbows", "الكوعان"], ["Eyebrows", "الحاجبان"]],
+    ["Which part of your body do you use to walk?", "أي جزء من جسمك تستخدمه للمشي؟", ["Legs", "الساقان"], ["Ears", "الأذنان"], ["Nose", "الأنف"], ["Eyebrows", "الحاجبان"]],
+    ["Which body part helps you hold a pencil?", "أي جزء من جسمك يساعدك على إمساك القلم؟", ["Hand", "اليد"], ["Knee", "الركبة"], ["Ear", "الأذن"], ["Foot", "القدم"]],
+    ["Which body part joins your head to your shoulders?", "أي جزء من الجسم يربط رأسك بكتفيك؟", ["Neck", "الرقبة"], ["Ankle", "الكاحل"], ["Wrist", "المعصم"], ["Knee", "الركبة"]],
+    ["Which body part joins your hand to your arm?", "أي جزء من الجسم يربط يدك بذراعك؟", ["Wrist", "المعصم"], ["Ankle", "الكاحل"], ["Knee", "الركبة"], ["Neck", "الرقبة"]],
+    ["Which body part joins your foot to your leg?", "أي جزء من الجسم يربط قدمك بساقك؟", ["Ankle", "الكاحل"], ["Wrist", "المعصم"], ["Elbow", "الكوع"], ["Neck", "الرقبة"]],
+  ]),
+];

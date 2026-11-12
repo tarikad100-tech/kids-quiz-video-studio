@@ -1,0 +1,5 @@
+- history.ts: Arabic spelling "ألكسندر فلمنغ" -> "ألكسندر فليمنغ" (all occurrences).
+- history.ts: pasteurization question reworded (Pasteur developed it for wine/beer; milk later) -> "which scientist is pasteurization named after".
+- community.ts: whisk Arabic "المضرب" (means racket) -> "المخفقة".
+- community.ts: "Who cares" Arabic "ماذا يعني ذلك" -> "ومن يهتم".
+- shapes.ts, time.ts: reviewed, no errors found.

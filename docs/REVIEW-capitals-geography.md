@@ -1,0 +1,10 @@
+- capitals.ts flag question (white cross on red): Denmark/Norway also arguably correct -> replaced with Austria, Turkey.
+- geography.ts Great Barrier Reef Arabic said "island" (جزيرة) -> fixed to الحاجز المرجاني العظيم.
+- geography.ts Guadalajara (also a city in Spain) -> deleted row.
+- geography.ts latitude question distractor "circles around poles only" was arguably true -> replaced.
+- geography.ts Arabic fixes: Arabian Peninsula sides wording; Sahara etymology wording; "Down Under" nickname translation (was nonsense).
+- geography.ts largest-desert question reworded (hot vs cold ambiguity, Africa/Sahara); Nepal question reworded (flag "mountain-shaped" was wrong).
+- capitals.ts duplicate 'no coast' question (Mongolia version) deleted (same id as Switzerland one).
+- capitals.ts "directly south of the US": distractor Cuba (lies south of Florida, arguable) -> Argentina.
+- geography.ts: English Channel Arabic -> بحر المانش; Hudson question "flows beside" NYC; UK-countries distractor Denmark/Ireland: Denmark->Iceland (Ireland kept? see file); Antarctica-surrounding Arabic wording unified.
+- geography.ts UK-countries question: distractor Ireland (Northern Ireland arguable) -> Sweden.

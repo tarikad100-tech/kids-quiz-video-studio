@@ -1,0 +1,187 @@
+import { mcq } from "./helpers";
+
+export const SHAPES_ITEMS = [
+  // Colors
+  ...mcq("shapes", [
+    ["Which color do you get by mixing blue and yellow?", "أي لون نحصل عليه بخلط الأزرق والأصفر؟", ["Green", "أخضر"], ["Purple", "بنفسجي"], ["Orange", "برتقالي"], ["Pink", "وردي"]],
+    ["Which color do you get by mixing red and yellow?", "أي لون نحصل عليه بخلط الأحمر والأصفر؟", ["Orange", "برتقالي"], ["Green", "أخضر"], ["Purple", "بنفسجي"], ["Brown", "بني"]],
+    ["Which color do you get by mixing red and white?", "أي لون نحصل عليه بخلط الأحمر والأبيض؟", ["Pink", "وردي"], ["Green", "أخضر"], ["Gray", "رمادي"], ["Orange", "برتقالي"]],
+    ["Which color do you get by mixing red and blue?", "أي لون نحصل عليه بخلط الأحمر والأزرق؟", ["Purple", "بنفسجي"], ["Green", "أخضر"], ["Orange", "برتقالي"], ["Yellow", "أصفر"]],
+    ["Which color do you get by mixing black and white?", "أي لون نحصل عليه بخلط الأسود والأبيض؟", ["Gray", "رمادي"], ["Pink", "وردي"], ["Green", "أخضر"], ["Orange", "برتقالي"]],
+    ["What color is a ripe banana?", "ما لون الموز الناضج؟", ["Yellow", "أصفر"], ["Blue", "أزرق"], ["Purple", "بنفسجي"], ["Black", "أسود"]],
+    ["What color is fresh snow?", "ما لون الثلج النظيف؟", ["White", "أبيض"], ["Green", "أخضر"], ["Red", "أحمر"], ["Black", "أسود"]],
+    ["What color is the sky on a clear sunny day?", "ما لون السماء في يوم مشمس صافٍ؟", ["Blue", "أزرق"], ["Green", "أخضر"], ["Pink", "وردي"], ["Brown", "بني"]],
+    ["What color is fresh grass?", "ما لون العشب الطازج؟", ["Green", "أخضر"], ["Blue", "أزرق"], ["Red", "أحمر"], ["Orange", "برتقالي"]],
+    ["What color is a ripe strawberry?", "ما لون الفراولة الناضجة؟", ["Red", "أحمر"], ["Blue", "أزرق"], ["Black", "أسود"], ["White", "أبيض"]],
+    ["How many colors are traditionally counted in a rainbow?", "كم لونًا يُعدّ تقليديًا في قوس قزح؟", ["7", "7"], ["3", "3"], ["5", "5"], ["10", "10"]],
+    ["Which color is on the outer edge (top) of a main rainbow?", "ما اللون الموجود في الحافة الخارجية العليا لقوس قزح؟", ["Red", "أحمر"], ["Violet", "بنفسجي"], ["Green", "أخضر"], ["Yellow", "أصفر"]],
+    ["What color is a carrot?", "ما لون الجزرة؟", ["Orange", "برتقالي"], ["Blue", "أزرق"], ["Purple", "بنفسجي"], ["White", "أبيض"]],
+  ]),
+
+  // 2D shapes
+  ...mcq("shapes", [
+    ["How many sides does a triangle have?", "كم عدد أضلاع المثلث؟", ["3", "3"], ["4", "4"], ["5", "5"], ["6", "6"]],
+    ["How many sides does a square have?", "كم عدد أضلاع المربع؟", ["4", "4"], ["3", "3"], ["5", "5"], ["6", "6"]],
+    ["How many sides does a pentagon have?", "كم عدد أضلاع الخماسي؟", ["5", "5"], ["4", "4"], ["6", "6"], ["8", "8"]],
+    ["How many sides does a hexagon have?", "كم عدد أضلاع السداسي؟", ["6", "6"], ["5", "5"], ["7", "7"], ["8", "8"]],
+    ["How many sides does an octagon have?", "كم عدد أضلاع المثمّن؟", ["8", "8"], ["6", "6"], ["7", "7"], ["10", "10"]],
+    ["How many corners does a rectangle have?", "كم عدد زوايا المستطيل؟", ["4", "4"], ["2", "2"], ["3", "3"], ["6", "6"]],
+    ["Which shape has no corners and no straight sides?", "أي شكل ليس له زوايا ولا أضلاع مستقيمة؟", ["Circle", "الدائرة"], ["Square", "المربع"], ["Triangle", "المثلث"], ["Rectangle", "المستطيل"]],
+    ["Which shape has 4 equal sides and 4 square corners?", "أي شكل له 4 أضلاع متساوية و4 زوايا قائمة؟", ["Square", "المربع"], ["Triangle", "المثلث"], ["Circle", "الدائرة"], ["Hexagon", "السداسي"]],
+    ["Which shape has 3 corners?", "أي شكل له 3 زوايا؟", ["Triangle", "المثلث"], ["Square", "المربع"], ["Circle", "الدائرة"], ["Pentagon", "الخماسي"]],
+    ["A shape with 4 sides is called a what?", "ماذا نسمّي الشكل الذي له 4 أضلاع؟", ["Quadrilateral", "شكل رباعي"], ["Triangle", "مثلث"], ["Pentagon", "خماسي"], ["Circle", "دائرة"]],
+    ["How many degrees is a right angle?", "كم درجة تبلغ الزاوية القائمة؟", ["90", "90"], ["45", "45"], ["180", "180"], ["60", "60"]],
+    ["What shape are the cells of a honeycomb?", "ما شكل خلايا قرص العسل؟", ["Hexagon", "سداسي"], ["Circle", "دائرة"], ["Triangle", "مثلث"], ["Pentagon", "خماسي"]],
+    ["How many sides does a heptagon have?", "كم عدد أضلاع السباعي؟", ["7", "7"], ["6", "6"], ["8", "8"], ["9", "9"]],
+    ["How many sides does a decagon have?", "كم عدد أضلاع العشاري؟", ["10", "10"], ["8", "8"], ["9", "9"], ["12", "12"]],
+    ["Which shape has two long sides and two short sides, all corners square?", "أي شكل له ضلعان طويلان وضلعان قصيران وزواياه قائمة؟", ["Rectangle", "المستطيل"], ["Circle", "الدائرة"], ["Triangle", "المثلث"], ["Hexagon", "السداسي"]],
+    ["What do we call the distance around the edge of a shape?", "ماذا نسمّي المسافة حول حافة الشكل؟", ["Perimeter", "المحيط"], ["Area", "المساحة"], ["Volume", "الحجم"], ["Weight", "الوزن"]],
+    ["The three angles inside a triangle always add up to how many degrees?", "مجموع زوايا المثلث الثلاث دائمًا كم درجة؟", ["180", "180"], ["90", "90"], ["360", "360"], ["100", "100"]],
+  ]),
+
+  // 3D shapes
+  ...mcq("shapes", [
+    ["How many faces does a cube have?", "كم عدد أوجه المكعب؟", ["6", "6"], ["4", "4"], ["8", "8"], ["12", "12"]],
+    ["How many edges does a cube have?", "كم عدد أحرف المكعب؟", ["12", "12"], ["6", "6"], ["8", "8"], ["10", "10"]],
+    ["How many corners (vertices) does a cube have?", "كم عدد رؤوس المكعب؟", ["8", "8"], ["6", "6"], ["4", "4"], ["12", "12"]],
+    ["Which 3D shape is shaped like a ball?", "أي مجسّم يشبه الكرة؟", ["Sphere", "الكرة"], ["Cube", "المكعب"], ["Cone", "المخروط"], ["Pyramid", "الهرم"]],
+    ["Which 3D shape does a can of beans look like?", "أي مجسّم تشبه علبة الفول؟", ["Cylinder", "الأسطوانة"], ["Cube", "المكعب"], ["Sphere", "الكرة"], ["Cone", "المخروط"]],
+    ["Which 3D shape does an ice cream cone look like?", "أي مجسّم يشبه قرن الآيس كريم؟", ["Cone", "المخروط"], ["Cylinder", "الأسطوانة"], ["Cube", "المكعب"], ["Sphere", "الكرة"]],
+    ["Which 3D shape does a die look like?", "أي مجسّم يشبه حجر النرد؟", ["Cube", "المكعب"], ["Sphere", "الكرة"], ["Cone", "المخروط"], ["Cylinder", "الأسطوانة"]],
+    ["How many flat faces does a sphere have?", "كم عدد الأوجه المسطحة في الكرة؟", ["0", "0"], ["1", "1"], ["2", "2"], ["6", "6"]],
+    ["How many flat circular faces does a cylinder have?", "كم عدد الأوجه الدائرية المسطحة في الأسطوانة؟", ["2", "2"], ["0", "0"], ["1", "1"], ["3", "3"]],
+    ["How many faces does a square-based pyramid have, counting its base?", "كم عدد أوجه الهرم ذي القاعدة المربعة مع قاعدته؟", ["5", "5"], ["4", "4"], ["6", "6"], ["8", "8"]],
+    ["What shape is the base of the Great Pyramid of Giza?", "ما شكل قاعدة الهرم الأكبر في الجيزة؟", ["Square", "مربع"], ["Triangle", "مثلث"], ["Circle", "دائرة"], ["Hexagon", "سداسي"]],
+    ["What shape are the sides of a pyramid (not the base)?", "ما شكل الأوجه الجانبية للهرم الرباعي؟", ["Triangles", "مثلثات"], ["Circles", "دوائر"], ["Squares", "مربعات"], ["Hexagons", "سداسيات"]],
+    ["How many faces does a triangular prism have?", "كم عدد أوجه المنشور الثلاثي؟", ["5", "5"], ["3", "3"], ["4", "4"], ["8", "8"]],
+  ]),
+
+  // Symmetry and patterns
+  ...mcq("shapes", [
+    ["How many lines of symmetry does a square have?", "كم عدد محاور التماثل في المربع؟", ["4", "4"], ["1", "1"], ["2", "2"], ["8", "8"]],
+    ["How many lines of symmetry does an equilateral triangle have?", "كم عدد محاور التماثل في المثلث المتساوي الأضلاع؟", ["3", "3"], ["1", "1"], ["2", "2"], ["6", "6"]],
+    ["How many lines of symmetry does a rectangle (not a square) have?", "كم عدد محاور التماثل في المستطيل (غير المربع)؟", ["2", "2"], ["1", "1"], ["4", "4"], ["0", "0"]],
+    ["If you fold a shape and both halves match exactly, the shape has what?", "إذا طويت شكلًا فتطابق نصفاه تمامًا، فماذا يوجد فيه؟", ["Symmetry", "تماثل"], ["Volume", "حجم"], ["Weight", "وزن"], ["Speed", "سرعة"]],
+    ["Which English letter has a line of symmetry down its middle?", "أي حرف إنجليزي له محور تماثل رأسي في منتصفه؟", ["A", "A"], ["F", "F"], ["G", "G"], ["J", "J"]],
+    ["What comes next? red, blue, red, blue, red, ...", "ماذا يأتي بعد؟ أحمر، أزرق، أحمر، أزرق، أحمر، ...", ["Blue", "أزرق"], ["Red", "أحمر"], ["Green", "أخضر"], ["Yellow", "أصفر"]],
+    ["What comes next? circle, square, circle, square, circle, ...", "ماذا يأتي بعد؟ دائرة، مربع، دائرة، مربع، دائرة، ...", ["Square", "مربع"], ["Circle", "دائرة"], ["Triangle", "مثلث"], ["Star", "نجمة"]],
+    ["What comes next? 2, 4, 6, 8, ...", "ما العدد التالي؟ 2، 4، 6، 8، ...", ["10", "10"], ["9", "9"], ["12", "12"], ["11", "11"]],
+    ["What comes next? 5, 10, 15, 20, ...", "ما العدد التالي؟ 5، 10، 15، 20، ...", ["25", "25"], ["30", "30"], ["22", "22"], ["24", "24"]],
+    ["What comes next? 10, 20, 30, 40, ...", "ما العدد التالي؟ 10، 20، 30، 40، ...", ["50", "50"], ["45", "45"], ["60", "60"], ["41", "41"]],
+    ["What comes next? 3, 6, 9, 12, ...", "ما العدد التالي؟ 3، 6، 9، 12، ...", ["15", "15"], ["14", "14"], ["13", "13"], ["18", "18"]],
+    ["What comes next? 1, 2, 3, 4, 5, ...", "ما العدد التالي؟ 1، 2، 3، 4، 5، ...", ["6", "6"], ["7", "7"], ["8", "8"], ["10", "10"]],
+  ]),
+
+  // Even / odd, number order, place value
+  ...mcq("shapes", [
+    ["Which of these numbers is even?", "أي من هذه الأعداد عدد زوجي؟", ["14", "14"], ["7", "7"], ["9", "9"], ["11", "11"]],
+    ["Which of these numbers is odd?", "أي من هذه الأعداد عدد فردي؟", ["27", "27"], ["18", "18"], ["30", "30"], ["44", "44"]],
+    ["Which number is the odd one out? 2, 4, 7, 8", "أي عدد يختلف عن البقية؟ 2، 4، 7، 8", ["7", "7"], ["2", "2"], ["4", "4"], ["8", "8"]],
+    ["An even number always ends in which digits?", "بأي أرقام ينتهي العدد الزوجي دائمًا؟", ["0, 2, 4, 6 or 8", "0 أو 2 أو 4 أو 6 أو 8"], ["1, 3, 5, 7 or 9", "1 أو 3 أو 5 أو 7 أو 9"], ["Only 0", "0 فقط"], ["Only 5", "5 فقط"]],
+    ["Is zero an even number?", "هل الصفر عدد زوجي؟", ["Yes", "نعم"], ["No, it is odd", "لا، إنه فردي"], ["It is neither", "ليس زوجيًا ولا فرديًا"], ["Only sometimes", "أحيانًا فقط"]],
+    ["What kind of number do you get when you add two even numbers?", "أي نوع من الأعداد ينتج عن جمع عددين زوجيين؟", ["Even", "زوجي"], ["Odd", "فردي"], ["Zero", "صفر"], ["It depends", "يعتمد على العددين"]],
+    ["What kind of number do you get when you add two odd numbers?", "أي نوع من الأعداد ينتج عن جمع عددين فرديين؟", ["Even", "زوجي"], ["Odd", "فردي"], ["Zero", "صفر"], ["It depends", "يعتمد على العددين"]],
+    ["Which number comes right after 99?", "ما العدد الذي يأتي بعد 99 مباشرة؟", ["100", "100"], ["101", "101"], ["90", "90"], ["909", "909"]],
+    ["Which number comes right before 1000?", "ما العدد الذي يسبق 1000 مباشرة؟", ["999", "999"], ["990", "990"], ["1001", "1001"], ["900", "900"]],
+    ["Which number is between 49 and 51?", "ما العدد الواقع بين 49 و51؟", ["50", "50"], ["48", "48"], ["52", "52"], ["60", "60"]],
+    ["What is the smallest 2-digit number?", "ما أصغر عدد مكوّن من رقمين؟", ["10", "10"], ["11", "11"], ["1", "1"], ["99", "99"]],
+    ["What is the largest 2-digit number?", "ما أكبر عدد مكوّن من رقمين؟", ["99", "99"], ["100", "100"], ["90", "90"], ["98", "98"]],
+    ["What is the smallest 3-digit number?", "ما أصغر عدد مكوّن من ثلاثة أرقام؟", ["100", "100"], ["101", "101"], ["111", "111"], ["999", "999"]],
+    ["In the number 345, which digit is in the hundreds place?", "في العدد 345، أي رقم في خانة المئات؟", ["3", "3"], ["4", "4"], ["5", "5"], ["0", "0"]],
+    ["In the number 582, what is the value of the digit 8?", "في العدد 582، ما قيمة الرقم 8؟", ["80", "80"], ["8", "8"], ["800", "800"], ["508", "508"]],
+    ["In the number 6,000, what is the digit 6 worth?", "في العدد 6000، كم تبلغ قيمة الرقم 6؟", ["6 thousands", "6 آلاف"], ["6 hundreds", "6 مئات"], ["6 tens", "6 عشرات"], ["6 ones", "6 آحاد"]],
+    ["How many tens are in 70?", "كم عشرة في العدد 70؟", ["7", "7"], ["70", "70"], ["10", "10"], ["1", "1"]],
+    ["How many tens make one hundred?", "كم عشرة تكوّن مئة؟", ["10", "10"], ["5", "5"], ["100", "100"], ["20", "20"]],
+    ["How many hundreds make one thousand?", "كم مئة تكوّن ألفًا؟", ["10", "10"], ["5", "5"], ["100", "100"], ["1000", "1000"]],
+    ["Which number is the greatest?", "أي عدد هو الأكبر؟", ["905", "905"], ["590", "590"], ["509", "509"], ["95", "95"]],
+    ["Which number is the smallest?", "أي عدد هو الأصغر؟", ["108", "108"], ["180", "180"], ["801", "801"], ["810", "810"]],
+    ["What do we call the number 12 items in a group?", "ماذا نسمّي مجموعة من 12 شيئًا؟", ["A dozen", "دزينة"], ["A pair", "زوج"], ["A trio", "ثلاثية"], ["A score", "عشرون"]],
+    ["How many things are in a pair?", "كم شيئًا في الزوج؟", ["2", "2"], ["1", "1"], ["3", "3"], ["4", "4"]],
+    ["How many is half a dozen?", "كم يساوي نصف دزينة؟", ["6", "6"], ["5", "5"], ["12", "12"], ["4", "4"]],
+  ]),
+
+  // Roman numerals
+  ...mcq("shapes", [
+    ["Which number does the Roman numeral I mean?", "ماذا يعني الرمز الروماني I؟", ["1", "1"], ["5", "5"], ["10", "10"], ["2", "2"]],
+    ["Which number does the Roman numeral V mean?", "ماذا يعني الرمز الروماني V؟", ["5", "5"], ["1", "1"], ["10", "10"], ["50", "50"]],
+    ["Which number does the Roman numeral X mean?", "ماذا يعني الرمز الروماني X؟", ["10", "10"], ["5", "5"], ["20", "20"], ["100", "100"]],
+    ["Which Roman numeral means 3?", "أي رمز روماني يعني 3؟", ["III", "III"], ["II", "II"], ["IV", "IV"], ["V", "V"]],
+    ["Which Roman numeral means 4?", "أي رمز روماني يعني 4؟", ["IV", "IV"], ["VI", "VI"], ["III", "III"], ["VII", "VII"]],
+    ["Which Roman numeral means 6?", "أي رمز روماني يعني 6؟", ["VI", "VI"], ["IV", "IV"], ["V", "V"], ["IX", "IX"]],
+    ["Which Roman numeral means 8?", "أي رمز روماني يعني 8؟", ["VIII", "VIII"], ["VII", "VII"], ["IX", "IX"], ["XI", "XI"]],
+    ["Which Roman numeral means 9?", "أي رمز روماني يعني 9؟", ["IX", "IX"], ["XI", "XI"], ["VIII", "VIII"], ["XX", "XX"]],
+  ]),
+
+  // Fractions
+  ...mcq("shapes", [
+    ["What fraction means one part out of two equal parts?", "أي كسر يعني جزءًا واحدًا من جزأين متساويين؟", ["1/2", "1/2"], ["1/4", "1/4"], ["2/1", "2/1"], ["1/3", "1/3"]],
+    ["What fraction means one part out of four equal parts?", "أي كسر يعني جزءًا واحدًا من أربعة أجزاء متساوية؟", ["1/4", "1/4"], ["1/2", "1/2"], ["4/1", "4/1"], ["1/8", "1/8"]],
+    ["How many halves make one whole?", "كم نصفًا يكوّن وحدة كاملة؟", ["2", "2"], ["1", "1"], ["3", "3"], ["4", "4"]],
+    ["How many quarters make one whole?", "كم ربعًا يكوّن وحدة كاملة؟", ["4", "4"], ["2", "2"], ["3", "3"], ["8", "8"]],
+    ["A pizza is cut into 8 equal slices. What fraction is one slice?", "قُطعت بيتزا إلى 8 شرائح متساوية. ما كسر الشريحة الواحدة؟", ["1/8", "1/8"], ["1/4", "1/4"], ["1/2", "1/2"], ["8/1", "8/1"]],
+    ["Which is bigger, one half or one quarter?", "أيهما أكبر: النصف أم الربع؟", ["One half", "النصف"], ["One quarter", "الربع"], ["They are equal", "هما متساويان"], ["Cannot tell", "لا يمكن المعرفة"]],
+    ["In the fraction 3/4, what is the bottom number called?", "في الكسر 3/4، ماذا يُسمّى الرقم السفلي؟", ["Denominator", "المقام"], ["Numerator", "البسط"], ["Product", "حاصل الضرب"], ["Sum", "المجموع"]],
+    ["In the fraction 3/4, what is the top number called?", "في الكسر 3/4، ماذا يُسمّى الرقم العلوي؟", ["Numerator", "البسط"], ["Denominator", "المقام"], ["Product", "حاصل الضرب"], ["Sum", "المجموع"]],
+    ["What is half of 10?", "كم يساوي نصف العدد 10؟", ["5", "5"], ["2", "2"], ["20", "20"], ["10", "10"]],
+    ["What is a quarter of 20?", "كم يساوي ربع العدد 20؟", ["5", "5"], ["4", "4"], ["10", "10"], ["40", "40"]],
+  ]),
+
+  // Measurement
+  ...mcq("shapes", [
+    ["Which tool measures length?", "أي أداة تقيس الطول؟", ["Ruler", "المسطرة"], ["Thermometer", "الميزان الحراري"], ["Clock", "الساعة"], ["Scale", "الميزان"]],
+    ["Which tool measures temperature?", "أي أداة تقيس درجة الحرارة؟", ["Thermometer", "الميزان الحراري"], ["Ruler", "المسطرة"], ["Scale", "الميزان"], ["Calendar", "التقويم"]],
+    ["Which tool measures weight?", "أي أداة تقيس الوزن؟", ["Scale", "الميزان"], ["Ruler", "المسطرة"], ["Thermometer", "الميزان الحراري"], ["Clock", "الساعة"]],
+    ["How many centimeters are in 1 meter?", "كم سنتيمترًا في المتر الواحد؟", ["100", "100"], ["10", "10"], ["1000", "1000"], ["60", "60"]],
+    ["How many meters are in 1 kilometer?", "كم مترًا في الكيلومتر الواحد؟", ["1000", "1000"], ["100", "100"], ["10", "10"], ["60", "60"]],
+    ["How many grams are in 1 kilogram?", "كم غرامًا في الكيلوغرام الواحد؟", ["1000", "1000"], ["100", "100"], ["10", "10"], ["500", "500"]],
+    ["How many millimeters are in 1 centimeter?", "كم مليمترًا في السنتيمتر الواحد؟", ["10", "10"], ["100", "100"], ["1", "1"], ["1000", "1000"]],
+    ["Which is longer, 1 meter or 1 centimeter?", "أيهما أطول: المتر أم السنتيمتر؟", ["1 meter", "المتر"], ["1 centimeter", "السنتيمتر"], ["They are equal", "هما متساويان"], ["Cannot tell", "لا يمكن المعرفة"]],
+    ["Which is heavier, 1 kilogram of feathers or 1 kilogram of stones?", "أيهما أثقل: كيلوغرام من الريش أم كيلوغرام من الحجارة؟", ["They weigh the same", "وزنهما متساوٍ"], ["The feathers", "الريش"], ["The stones", "الحجارة"], ["Cannot tell", "لا يمكن المعرفة"]],
+    ["Which unit is best for measuring the length of a pencil?", "أي وحدة أنسب لقياس طول قلم الرصاص؟", ["Centimeters", "السنتيمتر"], ["Kilometers", "الكيلومتر"], ["Kilograms", "الكيلوغرام"], ["Liters", "اللتر"]],
+    ["Which unit is best for measuring the distance between two cities?", "أي وحدة أنسب لقياس المسافة بين مدينتين؟", ["Kilometers", "الكيلومتر"], ["Centimeters", "السنتيمتر"], ["Grams", "الغرام"], ["Millimeters", "المليمتر"]],
+    ["Which unit is used to measure how much liquid a bottle holds?", "أي وحدة تُستخدم لقياس كمية السائل في زجاجة؟", ["Liters", "اللترات"], ["Meters", "الأمتار"], ["Kilograms", "الكيلوغرامات"], ["Degrees", "الدرجات"]],
+    ["At what temperature does water freeze, in degrees Celsius?", "عند أي درجة مئوية يتجمد الماء؟", ["0", "0"], ["10", "10"], ["32", "32"], ["100", "100"]],
+    ["At sea level, at what temperature does water boil, in degrees Celsius?", "عند مستوى سطح البحر، عند أي درجة مئوية يغلي الماء؟", ["100", "100"], ["50", "50"], ["0", "0"], ["212", "212"]],
+    ["What do we call the amount of space inside a flat shape?", "ماذا نسمّي المساحة داخل الشكل المسطح؟", ["Area", "المساحة"], ["Perimeter", "المحيط"], ["Speed", "السرعة"], ["Weight", "الوزن"]],
+  ]),
+
+  // Money
+  ...mcq("shapes", [
+    ["What do we call the money a shop gives back when you pay too much?", "ماذا نسمّي النقود التي يعيدها المتجر إليك عندما تدفع أكثر من الثمن؟", ["Change", "الباقي"], ["Price", "الثمن"], ["Tax", "ضريبة"], ["Debt", "دَين"]],
+    ["What does saving money mean?", "ماذا يعني ادخار المال؟", ["Keeping some to use later", "الاحتفاظ ببعضه لاستخدامه لاحقًا"], ["Spending it all today", "إنفاقه كله اليوم"], ["Giving it all away", "التبرع به كله"], ["Throwing it away", "رميه"]],
+    ["What do we call the number that tells how much something costs?", "ماذا نسمّي الرقم الذي يبيّن كم يكلّف الشيء؟", ["Price", "السعر"], ["Weight", "الوزن"], ["Height", "الطول"], ["Speed", "السرعة"]],
+    ["You have 3 coins and each is worth 10. How much money do you have?", "معك 3 قطع نقدية وقيمة كل منها 10. كم مجموع نقودك؟", ["30", "30"], ["13", "13"], ["20", "20"], ["40", "40"]],
+    ["You have 4 coins and each is worth 5. How much money do you have?", "معك 4 قطع نقدية وقيمة كل منها 5. كم مجموع نقودك؟", ["20", "20"], ["9", "9"], ["15", "15"], ["25", "25"]],
+    ["A toy costs 10. You pay with 20. How much change should you get?", "تكلفة لعبة 10، ودفعت 20. كم يجب أن يُعاد إليك؟", ["10", "10"], ["5", "5"], ["20", "20"], ["30", "30"]],
+  ]),
+
+  // Opposites
+  ...mcq("shapes", [
+    ["What is the opposite of hot?", "ما عكس كلمة ساخن؟", ["Cold", "بارد"], ["Warm", "دافئ"], ["Big", "كبير"], ["Soft", "ناعم"]],
+    ["What is the opposite of up?", "ما عكس كلمة أعلى؟", ["Down", "أسفل"], ["Over", "فوق"], ["Left", "يسار"], ["Near", "قريب"]],
+    ["What is the opposite of tall?", "ما عكس كلمة طويل؟", ["Short", "قصير"], ["Wide", "عريض"], ["Fat", "سمين"], ["Old", "قديم"]],
+    ["What is the opposite of full?", "ما عكس كلمة ممتلئ؟", ["Empty", "فارغ"], ["Heavy", "ثقيل"], ["Wet", "مبلل"], ["Big", "كبير"]],
+    ["What is the opposite of day?", "ما عكس كلمة نهار؟", ["Night", "ليل"], ["Week", "أسبوع"], ["Sun", "شمس"], ["Morning", "صباح"]],
+    ["What is the opposite of open?", "ما عكس كلمة مفتوح؟", ["Closed", "مغلق"], ["Wide", "واسع"], ["Empty", "فارغ"], ["Free", "حر"]],
+    ["What is the opposite of fast?", "ما عكس كلمة سريع؟", ["Slow", "بطيء"], ["Loud", "عالٍ"], ["Late", "متأخر"], ["Strong", "قوي"]],
+    ["What is the opposite of heavy?", "ما عكس كلمة ثقيل؟", ["Light", "خفيف"], ["Small", "صغير"], ["Thin", "رفيع"], ["Short", "قصير"]],
+    ["What is the opposite of hard?", "ما عكس كلمة صلب؟", ["Soft", "ناعم"], ["Sharp", "حاد"], ["Heavy", "ثقيل"], ["Cold", "بارد"]],
+    ["What is the opposite of wet?", "ما عكس كلمة مبلل؟", ["Dry", "جاف"], ["Cold", "بارد"], ["Clean", "نظيف"], ["Soft", "ناعم"]],
+    ["What is the opposite of first?", "ما عكس كلمة أول؟", ["Last", "أخير"], ["Second", "ثانٍ"], ["Early", "مبكر"], ["Next", "تالٍ"]],
+    ["What is the opposite of left?", "ما عكس كلمة يسار؟", ["Right", "يمين"], ["Up", "أعلى"], ["Back", "خلف"], ["Near", "قريب"]],
+    ["What is the opposite of inside?", "ما عكس كلمة داخل؟", ["Outside", "خارج"], ["Under", "تحت"], ["Near", "قريب"], ["Over", "فوق"]],
+    ["What is the opposite of old (for a thing)?", "ما عكس كلمة قديم (للأشياء)؟", ["New", "جديد"], ["Young", "صغير السن"], ["Big", "كبير"], ["Dirty", "متسخ"]],
+  ]),
+
+  // Simple logic
+  ...mcq("shapes", [
+    ["Which one does not belong? apple, banana, carrot, orange", "أيها لا ينتمي للمجموعة؟ تفاحة، موزة، جزرة، برتقالة", ["Carrot", "جزرة"], ["Apple", "تفاحة"], ["Banana", "موزة"], ["Orange", "برتقالة"]],
+    ["Which one does not belong? dog, cat, car, horse", "أيها لا ينتمي للمجموعة؟ كلب، قطة، سيارة، حصان", ["Car", "سيارة"], ["Dog", "كلب"], ["Cat", "قطة"], ["Horse", "حصان"]],
+    ["Which one does not belong? red, blue, chair, green", "أيها لا ينتمي للمجموعة؟ أحمر، أزرق، كرسي، أخضر", ["Chair", "كرسي"], ["Red", "أحمر"], ["Blue", "أزرق"], ["Green", "أخضر"]],
+    ["What has hands and a face but cannot clap?", "ما الشيء الذي له يدان ووجه ولكنه لا يصفّق؟", ["A clock", "الساعة"], ["A chair", "كرسي"], ["A mirror", "مرآة"], ["A spoon", "ملعقة"]],
+    ["All birds have feathers. A sparrow is a bird. So a sparrow has what?", "كل الطيور لها ريش. العصفور طائر. إذن ماذا للعصفور؟", ["Feathers", "ريش"], ["Fur", "فرو"], ["Scales", "قشور"], ["Fins", "زعانف"]],
+    ["How many legs do 2 dogs have in total?", "كم عدد أرجل كلبين معًا؟", ["8", "8"], ["4", "4"], ["6", "6"], ["2", "2"]],
+    ["Which is the biggest number you can make with the digits 3, 9 and 1?", "ما أكبر عدد يمكن تكوينه من الأرقام 3 و9 و1؟", ["931", "931"], ["139", "139"], ["391", "391"], ["913", "913"]],
+    ["If today is Monday, what day is it after 2 more days?", "إذا كان اليوم الاثنين، فأي يوم يكون بعد يومين؟", ["Wednesday", "الأربعاء"], ["Tuesday", "الثلاثاء"], ["Thursday", "الخميس"], ["Sunday", "الأحد"]],
+  ]),
+];
